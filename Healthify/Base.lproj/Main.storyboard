@@ -1,24 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--StartVC-->
+        <scene sceneID="lHd-IV-iWx">
+            <objects>
+                <viewController storyboardIdentifier="StartVC" id="VVT-sL-pkm" customClass="StartVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5NC-oc-Csm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="UxO-qM-gTd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21Y-vw-YpG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-602" y="113"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133" y="113"/>
+        </scene>
+        <!--Sign UpVC-->
+        <scene sceneID="f3q-na-znC">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" id="KtZ-Rd-Ov8" customClass="SignUpVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jYy-0Y-kSA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Kuf-OU-y45"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDG-Ff-blq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="113"/>
+        </scene>
+        <!--Forgot PassVC-->
+        <scene sceneID="O00-fN-3jy">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPassVC" id="Rxp-yR-5t8" customClass="ForgotPassVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="raj-x2-asA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HJr-6U-sO3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ay7-Iz-Dlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="113"/>
+        </scene>
+        <!--OCR-->
+        <scene sceneID="yh2-8G-W8i">
+            <objects>
+                <viewController storyboardIdentifier="OCRVC" id="qck-M5-8ss" customClass="OCRVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ama-HE-lMT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bad-hl-2N7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OCR" image="camera" catalog="system" id="BtX-YI-aVd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1q-qQ-Qke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4150.7246376811599" y="-320.08928571428572"/>
+        </scene>
+        <!--Blood Donation-->
+        <scene sceneID="pl0-Xb-4AD">
+            <objects>
+                <viewController storyboardIdentifier="DonorsVC" id="CH1-JW-PXq" customClass="DonorsVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2rh-Ma-4KW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ANg-Vg-oJS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blood Donation" image="heart.circle" catalog="system" id="2Bq-7n-bMo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KvC-Ep-Ata" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4151" y="346"/>
+        </scene>
+        <!--Medicine-->
+        <scene sceneID="2sa-Gt-RcJ">
+            <objects>
+                <viewController storyboardIdentifier="MedicineVC" id="bWj-lc-L68" customClass="MedicineVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ieo-px-dMT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="l1J-JP-tS4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Medicine" image="clock" catalog="system" id="XSz-hB-7Fp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKU-FS-OK9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3241" y="371"/>
+        </scene>
+        <!--Update DataVC-->
+        <scene sceneID="zbd-gq-cyo">
+            <objects>
+                <viewController storyboardIdentifier="UpdateDataVC" id="vsF-XH-dlp" customClass="UpdateDataVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SWn-rq-u6e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sMq-O9-bMQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r5Z-zn-rIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2991" y="-1528"/>
+        </scene>
+        <!--CameraVC-->
+        <scene sceneID="PPt-KZ-KsJ">
+            <objects>
+                <viewController storyboardIdentifier="CameraVC" id="oOA-xO-cAa" customClass="CameraVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DnM-co-ApH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="H4B-7a-MIZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IIa-Fr-Ohk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3990" y="-1800"/>
+        </scene>
+        <!--Hospitals-->
+        <scene sceneID="el2-TE-iZq">
+            <objects>
+                <viewController storyboardIdentifier="HospitalsVC" id="has-2R-LcT" customClass="HospitalsVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yyW-Vm-AZY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8U4-Ka-KAD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hospitals" image="mappin.and.ellipse" catalog="system" id="UB4-GL-YYd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPO-oa-GRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4151" y="-980"/>
+        </scene>
+        <!--Particular DonorVC-->
+        <scene sceneID="jsl-io-ogo">
+            <objects>
+                <viewController storyboardIdentifier="ParticularDonorVC" id="Ij3-db-Xr4" customClass="ParticularDonorVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="509-HL-xnC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="sRK-Sk-gGp"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvc-UG-OnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1965" y="-702"/>
+        </scene>
+        <!--My ProfileVC-->
+        <scene sceneID="RXW-Wz-g3H">
+            <objects>
+                <viewController storyboardIdentifier="MyProfileVC" id="Ej5-uz-yxQ" customClass="MyProfileVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qIv-0i-Dd2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="qEz-bI-BI1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1q-fv-kVS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2631" y="-700"/>
+        </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="Wdg-CC-8FQ">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" automaticallyAdjustsScrollViewInsets="NO" id="eQK-Kp-ore" customClass="TabBarVC" customModule="Healthify" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FuT-ej-ohz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="qck-M5-8ss" kind="relationship" relationship="viewControllers" id="Huy-0U-fte"/>
+                        <segue destination="CH1-JW-PXq" kind="relationship" relationship="viewControllers" id="s9r-4u-paM"/>
+                        <segue destination="bWj-lc-L68" kind="relationship" relationship="viewControllers" id="eJ8-dl-LZu"/>
+                        <segue destination="has-2R-LcT" kind="relationship" relationship="viewControllers" id="PQc-fD-wUq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6fK-XF-VFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3240.579710144928" y="-320.08928571428572"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="128" height="96"/>
+        <image name="clock" catalog="system" width="128" height="121"/>
+        <image name="heart.circle" catalog="system" width="128" height="121"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+    </resources>
 </document>
