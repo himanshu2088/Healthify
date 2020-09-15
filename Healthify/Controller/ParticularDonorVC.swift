@@ -166,6 +166,4 @@ class ParticularDonorVC: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
 
-    
-
 }

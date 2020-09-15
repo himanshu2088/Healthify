@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1BAC5BC59D7183D5CCB649B4 /* Pods_Healthify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159DED99925AF56A916E05E4 /* Pods_Healthify.framework */; };
+		20262FF0250D31B700E64FE9 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20262FEE250D31B700E64FE9 /* ProfileCell.swift */; };
+		20262FF1250D31B700E64FE9 /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20262FEF250D31B700E64FE9 /* ProfileCell.xib */; };
+		20262FF6250D399600E64FE9 /* AdsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20262FF5250D399600E64FE9 /* AdsVC.swift */; };
+		20303AC22505108200796028 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20303AC12505108200796028 /* ChatVC.swift */; };
+		20303AC42505109D00796028 /* BuySellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20303AC32505109D00796028 /* BuySellVC.swift */; };
+		204F0C92250AA1C8005B3DC5 /* ImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F0C91250AA1C8005B3DC5 /* ImagesVC.swift */; };
+		206C0036250D14C6002D62BC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206C0035250D14C6002D62BC /* ProfileVC.swift */; };
 		20711A4824C860FC008E0A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A4724C860FC008E0A44 /* AppDelegate.swift */; };
 		20711A4A24C860FC008E0A44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A4924C860FC008E0A44 /* SceneDelegate.swift */; };
 		20711A4C24C860FC008E0A44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A4B24C860FC008E0A44 /* ViewController.swift */; };
@@ -17,6 +24,9 @@
 		20711A5724C860FE008E0A44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20711A5524C860FE008E0A44 /* LaunchScreen.storyboard */; };
 		20711A6224C860FF008E0A44 /* HealthifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A6124C860FF008E0A44 /* HealthifyTests.swift */; };
 		20711A6D24C860FF008E0A44 /* HealthifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A6C24C860FF008E0A44 /* HealthifyUITests.swift */; };
+		20B932E525090F1800C24572 /* ItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B932E325090F1800C24572 /* ItemsCell.swift */; };
+		20B932E625090F1800C24572 /* ItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B932E425090F1800C24572 /* ItemsCell.xib */; };
+		20BB2D9C2505587C009CCC8B /* AddItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB2D9B2505587C009CCC8B /* AddItemVC.swift */; };
 		20CFA2F424CD62910002D0D5 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA2F324CD62910002D0D5 /* MyProfileVC.swift */; };
 		20CFA2F624CD68F60002D0D5 /* UpdateDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA2F524CD68F60002D0D5 /* UpdateDataVC.swift */; };
 		20DE032124CEB63E00DAC657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20DE032024CEB63E00DAC657 /* GoogleService-Info.plist */; };
@@ -24,12 +34,12 @@
 		20E533C624CCA11D00E2DDA4 /* ParticularDonorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E533C524CCA11D00E2DDA4 /* ParticularDonorVC.swift */; };
 		20E533CB24CCA31800E2DDA4 /* ParticularDonorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E533C924CCA31800E2DDA4 /* ParticularDonorCell.swift */; };
 		20E533CC24CCA31800E2DDA4 /* ParticularDonorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E533CA24CCA31800E2DDA4 /* ParticularDonorCell.xib */; };
+		20EA0C7C2501542A009AEB85 /* PDFPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA0C7B2501542A009AEB85 /* PDFPreviewViewController.swift */; };
+		20EA0C7E25015528009AEB85 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EA0C7D25015528009AEB85 /* PDFCreator.swift */; };
 		20EC418524CC11C00090183C /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC418424CC11C00090183C /* SignUpVC.swift */; };
 		20EC418724CC24D40090183C /* ForgotPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC418624CC24D40090183C /* ForgotPassVC.swift */; };
 		20EC418924CC64E80090183C /* DonorsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC418824CC64E80090183C /* DonorsVC.swift */; };
 		20EC418B24CC65230090183C /* OCRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC418A24CC65230090183C /* OCRVC.swift */; };
-		20EC418D24CC652E0090183C /* MedicineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC418C24CC652E0090183C /* MedicineVC.swift */; };
-		20EC418F24CC65680090183C /* HospitalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC418E24CC65680090183C /* HospitalsVC.swift */; };
 		20EC419124CC66BC0090183C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC419024CC66BC0090183C /* StartVC.swift */; };
 		20EC419424CC69600090183C /* DonorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC419224CC69600090183C /* DonorCell.swift */; };
 		20EC419524CC69600090183C /* DonorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EC419324CC69600090183C /* DonorCell.xib */; };
@@ -57,6 +67,13 @@
 /* Begin PBXFileReference section */
 		159DED99925AF56A916E05E4 /* Pods_Healthify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17EE72A68EBAACF42649C8AF /* Pods_Healthify_HealthifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Healthify_HealthifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20262FEE250D31B700E64FE9 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		20262FEF250D31B700E64FE9 /* ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		20262FF5250D399600E64FE9 /* AdsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsVC.swift; sourceTree = "<group>"; };
+		20303AC12505108200796028 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		20303AC32505109D00796028 /* BuySellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellVC.swift; sourceTree = "<group>"; };
+		204F0C91250AA1C8005B3DC5 /* ImagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesVC.swift; sourceTree = "<group>"; };
+		206C0035250D14C6002D62BC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		20711A4424C860FC008E0A44 /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20711A4724C860FC008E0A44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20711A4924C860FC008E0A44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +89,9 @@
 		20711A6824C860FF008E0A44 /* HealthifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20711A6C24C860FF008E0A44 /* HealthifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyUITests.swift; sourceTree = "<group>"; };
 		20711A6E24C860FF008E0A44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20B932E325090F1800C24572 /* ItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCell.swift; sourceTree = "<group>"; };
+		20B932E425090F1800C24572 /* ItemsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsCell.xib; sourceTree = "<group>"; };
+		20BB2D9B2505587C009CCC8B /* AddItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemVC.swift; sourceTree = "<group>"; };
 		20CFA2F324CD62910002D0D5 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		20CFA2F524CD68F60002D0D5 /* UpdateDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDataVC.swift; sourceTree = "<group>"; };
 		20DE032024CEB63E00DAC657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -79,12 +99,12 @@
 		20E533C524CCA11D00E2DDA4 /* ParticularDonorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticularDonorVC.swift; sourceTree = "<group>"; };
 		20E533C924CCA31800E2DDA4 /* ParticularDonorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticularDonorCell.swift; sourceTree = "<group>"; };
 		20E533CA24CCA31800E2DDA4 /* ParticularDonorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticularDonorCell.xib; sourceTree = "<group>"; };
+		20EA0C7B2501542A009AEB85 /* PDFPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewViewController.swift; sourceTree = "<group>"; };
+		20EA0C7D25015528009AEB85 /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 		20EC418424CC11C00090183C /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		20EC418624CC24D40090183C /* ForgotPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassVC.swift; sourceTree = "<group>"; };
 		20EC418824CC64E80090183C /* DonorsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorsVC.swift; sourceTree = "<group>"; };
 		20EC418A24CC65230090183C /* OCRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRVC.swift; sourceTree = "<group>"; };
-		20EC418C24CC652E0090183C /* MedicineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineVC.swift; sourceTree = "<group>"; };
-		20EC418E24CC65680090183C /* HospitalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsVC.swift; sourceTree = "<group>"; };
 		20EC419024CC66BC0090183C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		20EC419224CC69600090183C /* DonorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorCell.swift; sourceTree = "<group>"; };
 		20EC419324CC69600090183C /* DonorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonorCell.xib; sourceTree = "<group>"; };
@@ -133,13 +153,19 @@
 				20EC418424CC11C00090183C /* SignUpVC.swift */,
 				20EC418624CC24D40090183C /* ForgotPassVC.swift */,
 				20EC418824CC64E80090183C /* DonorsVC.swift */,
-				20CFA2F324CD62910002D0D5 /* MyProfileVC.swift */,
-				20CFA2F524CD68F60002D0D5 /* UpdateDataVC.swift */,
 				20E533C524CCA11D00E2DDA4 /* ParticularDonorVC.swift */,
 				20EC418A24CC65230090183C /* OCRVC.swift */,
+				20EA0C7B2501542A009AEB85 /* PDFPreviewViewController.swift */,
+				20EA0C7D25015528009AEB85 /* PDFCreator.swift */,
 				20DE032224CEC29400DAC657 /* CameraVC.swift */,
-				20EC418C24CC652E0090183C /* MedicineVC.swift */,
-				20EC418E24CC65680090183C /* HospitalsVC.swift */,
+				20303AC32505109D00796028 /* BuySellVC.swift */,
+				204F0C91250AA1C8005B3DC5 /* ImagesVC.swift */,
+				20BB2D9B2505587C009CCC8B /* AddItemVC.swift */,
+				20303AC12505108200796028 /* ChatVC.swift */,
+				206C0035250D14C6002D62BC /* ProfileVC.swift */,
+				20CFA2F324CD62910002D0D5 /* MyProfileVC.swift */,
+				20CFA2F524CD68F60002D0D5 /* UpdateDataVC.swift */,
+				20262FF5250D399600E64FE9 /* AdsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -151,22 +177,12 @@
 				20EC419324CC69600090183C /* DonorCell.xib */,
 				20E533C924CCA31800E2DDA4 /* ParticularDonorCell.swift */,
 				20E533CA24CCA31800E2DDA4 /* ParticularDonorCell.xib */,
+				20B932E325090F1800C24572 /* ItemsCell.swift */,
+				20B932E425090F1800C24572 /* ItemsCell.xib */,
+				20262FEE250D31B700E64FE9 /* ProfileCell.swift */,
+				20262FEF250D31B700E64FE9 /* ProfileCell.xib */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		2033D5AA24C86BCF00C31CE2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		2033D5AB24C86BD100C31CE2 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		20711A3B24C860FB008E0A44 = {
@@ -194,8 +210,6 @@
 		20711A4624C860FC008E0A44 /* Healthify */ = {
 			isa = PBXGroup;
 			children = (
-				2033D5AB24C86BD100C31CE2 /* Utilities */,
-				2033D5AA24C86BCF00C31CE2 /* Model */,
 				2033D5A924C86BCC00C31CE2 /* View */,
 				2033D5A824C86BCA00C31CE2 /* Controller */,
 				20711A4724C860FC008E0A44 /* AppDelegate.swift */,
@@ -360,6 +374,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B932E625090F1800C24572 /* ItemsCell.xib in Resources */,
+				20262FF1250D31B700E64FE9 /* ProfileCell.xib in Resources */,
 				20711A5724C860FE008E0A44 /* LaunchScreen.storyboard in Resources */,
 				20711A5424C860FE008E0A44 /* Assets.xcassets in Resources */,
 				20E533CC24CCA31800E2DDA4 /* ParticularDonorCell.xib in Resources */,
@@ -493,22 +509,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EC418D24CC652E0090183C /* MedicineVC.swift in Sources */,
+				204F0C92250AA1C8005B3DC5 /* ImagesVC.swift in Sources */,
+				206C0036250D14C6002D62BC /* ProfileVC.swift in Sources */,
+				20303AC22505108200796028 /* ChatVC.swift in Sources */,
 				20EC418724CC24D40090183C /* ForgotPassVC.swift in Sources */,
 				20711A5224C860FC008E0A44 /* Healthify.xcdatamodeld in Sources */,
 				20CFA2F624CD68F60002D0D5 /* UpdateDataVC.swift in Sources */,
+				20EA0C7E25015528009AEB85 /* PDFCreator.swift in Sources */,
 				20E533CB24CCA31800E2DDA4 /* ParticularDonorCell.swift in Sources */,
 				20711A4C24C860FC008E0A44 /* ViewController.swift in Sources */,
 				20DE032324CEC29400DAC657 /* CameraVC.swift in Sources */,
-				20EC418F24CC65680090183C /* HospitalsVC.swift in Sources */,
 				20EC418B24CC65230090183C /* OCRVC.swift in Sources */,
 				20711A4824C860FC008E0A44 /* AppDelegate.swift in Sources */,
 				20EC418524CC11C00090183C /* SignUpVC.swift in Sources */,
 				20EC419424CC69600090183C /* DonorCell.swift in Sources */,
 				20EC419124CC66BC0090183C /* StartVC.swift in Sources */,
 				20711A4A24C860FC008E0A44 /* SceneDelegate.swift in Sources */,
+				20B932E525090F1800C24572 /* ItemsCell.swift in Sources */,
+				20EA0C7C2501542A009AEB85 /* PDFPreviewViewController.swift in Sources */,
+				20262FF6250D399600E64FE9 /* AdsVC.swift in Sources */,
+				20BB2D9C2505587C009CCC8B /* AddItemVC.swift in Sources */,
 				20CFA2F424CD62910002D0D5 /* MyProfileVC.swift in Sources */,
 				20EC418924CC64E80090183C /* DonorsVC.swift in Sources */,
+				20262FF0250D31B700E64FE9 /* ProfileCell.swift in Sources */,
+				20303AC42505109D00796028 /* BuySellVC.swift in Sources */,
 				20E533C624CCA11D00E2DDA4 /* ParticularDonorVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

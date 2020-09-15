@@ -24,14 +24,6 @@ class DonorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var currentBlood = "default"
     var currentLocation: CLLocation?
     
-    let logoutBtn: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Logout", for: .normal)
-        button.titleLabel?.font = UIFont(name: "Avenir-Medium", size: 22.0)
-        button.tintColor = .systemBlue
-        return button
-    }()
-    
     let refreshBtn: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(UIImage(named: "refresh.png"), for: .normal)
@@ -45,15 +37,9 @@ class DonorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return view
     }()
     
-    let lineView2: UIView = {
-        let view = UIView()
-        view.backgroundColor = .lightGray
-        return view
-    }()
-    
     let profileLabel: UILabel = {
         let label = UILabel()
-        label.text = "Healthify"
+        label.text = "Blood Bank"
         label.font = UIFont(name: "Avenir-Medium", size: 22.0)
         label.textColor = .black
         return label
@@ -63,14 +49,6 @@ class DonorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let label = UILabel()
         label.text = "Donors available"
         label.font = UIFont(name: "Avenir-Heavy", size: 24.0)
-        label.textColor = .black
-        return label
-    }()
-    
-    let myProfileLabel: UILabel = {
-        let label = UILabel()
-        label.text = "My Profile"
-        label.font = UIFont(name: "Avenir", size: 26.0)
         label.textColor = .black
         return label
     }()
@@ -89,18 +67,6 @@ class DonorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return tableView
     }()
     
-    let imageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "profile.png")
-        return imageView
-    }()
-    
-    @objc func myProfile(_ sender: UILabel) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "MyProfileVC") as? MyProfileVC
-        self.present(nextViewController!, animated:true, completion:nil)
-    }
-    
     @objc func refresh(_ sender: UIButton) {
         nameArray.removeAll()
         bloodArray.removeAll()
@@ -109,21 +75,6 @@ class DonorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         documentIdArray.removeAll()
         tableView.reloadData()
         viewDidLoad()
-    }
-    
-    @objc func logout(_ sender: UIButton) {
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-            UIView.transition(with: self.view, duration: 0.5, options: .transitionCrossDissolve, animations: {
-            }, completion: nil)
-            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = mainStoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            UIApplication.shared.keyWindow?.rootViewController = viewController
-            UIApplication.shared.keyWindow?.makeKeyAndVisible()
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
     }
 
     override func viewDidLoad() {
@@ -204,22 +155,6 @@ class DonorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 
                 self.tableView.reloadData()
                 
-                self.view.addSubview(self.logoutBtn)
-                self.logoutBtn.translatesAutoresizingMaskIntoConstraints = false
-                self.logoutBtn.isUserInteractionEnabled = true
-                self.logoutBtn.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20.0).isActive = true
-                self.logoutBtn.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20.0).isActive = true
-                self.logoutBtn.addTarget(self, action: #selector(self.logout(_:)), for: .touchUpInside)
-                
-                self.view.addSubview(self.refreshBtn)
-                self.refreshBtn.translatesAutoresizingMaskIntoConstraints = false
-                self.refreshBtn.isUserInteractionEnabled = true
-                self.refreshBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20.0).isActive = true
-                self.refreshBtn.widthAnchor.constraint(equalToConstant: 22.0).isActive = true
-                self.refreshBtn.heightAnchor.constraint(equalToConstant: 22.0).isActive = true
-                self.refreshBtn.centerYAnchor.constraint(equalTo: self.logoutBtn.centerYAnchor, constant: 0.0).isActive = true
-                self.refreshBtn.addTarget(self, action: #selector(self.refresh(_:)), for: .touchUpInside)
-                
                 self.view.addSubview(self.lineView)
                 self.lineView.translatesAutoresizingMaskIntoConstraints = false
                 self.lineView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 60.0).isActive = true
@@ -228,34 +163,21 @@ class DonorsVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 
                 self.view.addSubview(self.profileLabel)
                 self.profileLabel.translatesAutoresizingMaskIntoConstraints = false
-                self.profileLabel.centerYAnchor.constraint(equalTo: self.logoutBtn.centerYAnchor, constant: 0.0).isActive = true
+                self.profileLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 20.0).isActive = true
                 self.profileLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0.0).isActive = true
                 
-                self.view.addSubview(self.myProfileLabel)
-                self.myProfileLabel.translatesAutoresizingMaskIntoConstraints = false
-                self.myProfileLabel.isUserInteractionEnabled = true
-                self.myProfileLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 30.0).isActive = true
-                self.myProfileLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 90.0).isActive = true
-                self.myProfileLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.myProfile(_:))))
-                
-                self.view.addSubview(self.imageView)
-                self.imageView.translatesAutoresizingMaskIntoConstraints = false
-                self.imageView.isUserInteractionEnabled = true
-                self.imageView.trailingAnchor.constraint(equalTo: self.myProfileLabel.leadingAnchor, constant: -5.0).isActive = true
-                self.imageView.widthAnchor.constraint(equalToConstant: 100.0).isActive = true
-                self.imageView.heightAnchor.constraint(equalToConstant: 100.0).isActive = true
-                self.imageView.centerYAnchor.constraint(equalTo: self.myProfileLabel.centerYAnchor, constant: 0.0).isActive = true
-                
-                self.view.addSubview(self.lineView2)
-                self.lineView2.translatesAutoresizingMaskIntoConstraints = false
-                self.lineView2.topAnchor.constraint(equalTo: self.myProfileLabel.bottomAnchor, constant: 30.0).isActive = true
-                self.lineView2.widthAnchor.constraint(equalToConstant: self.view.frame.width - 20).isActive = true
-                self.lineView2.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20.0).isActive = true
-                self.lineView2.heightAnchor.constraint(equalToConstant: 0.5).isActive = true
+                self.view.addSubview(self.refreshBtn)
+                self.refreshBtn.translatesAutoresizingMaskIntoConstraints = false
+                self.refreshBtn.isUserInteractionEnabled = true
+                self.refreshBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20.0).isActive = true
+                self.refreshBtn.widthAnchor.constraint(equalToConstant: 22.0).isActive = true
+                self.refreshBtn.heightAnchor.constraint(equalToConstant: 22.0).isActive = true
+                self.refreshBtn.centerYAnchor.constraint(equalTo: self.profileLabel.centerYAnchor, constant: 0.0).isActive = true
+                self.refreshBtn.addTarget(self, action: #selector(self.refresh(_:)), for: .touchUpInside)
                 
                 self.view.addSubview(self.donorsLabel)
                 self.donorsLabel.translatesAutoresizingMaskIntoConstraints = false
-                self.donorsLabel.topAnchor.constraint(equalTo: self.lineView2.bottomAnchor, constant: 10.0).isActive = true
+                self.donorsLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 70.0).isActive = true
                 self.donorsLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20.0).isActive = true
                 
                 self.tableView.removeFromSuperview()

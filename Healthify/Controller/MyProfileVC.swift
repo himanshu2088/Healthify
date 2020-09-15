@@ -36,20 +36,6 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return label
     }()
     
-    let updateBtn: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("UPDATE DATA", for: .normal)
-        button.titleLabel?.font = UIFont(name: "Avenir-Heavy", size: 25.0)
-        button.layer.cornerRadius = 8.0
-        button.layer.shadowColor = #colorLiteral(red: 1, green: 0.7764705882, blue: 0, alpha: 1)
-        button.layer.shadowOffset = CGSize(width: 0, height: 1)
-        button.layer.shadowOpacity = 1.0
-        button.backgroundColor = #colorLiteral(red: 1, green: 0.7764705882, blue: 0, alpha: 1)
-        button.tintColor = .black
-        return button
-    }()
-    
-    
     let keyArray = ["Name", "Age", "Address", "Blood", "Mobile", "Email"]
     
     var valueArray = [String]()
@@ -68,12 +54,6 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         tableView.rowHeight = 130
         return tableView
     }()
-    
-    @objc func updateData(_ sender : UIButton) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "UpdateDataVC") as? UpdateDataVC
-        self.present(nextViewController!, animated:true, completion:nil)
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,19 +112,10 @@ class MyProfileVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
             
             self.spinner.stopAnimating()
             
-            self.view.addSubview(self.updateBtn)
-            self.updateBtn.translatesAutoresizingMaskIntoConstraints = false
-            self.updateBtn.isUserInteractionEnabled = true
-            self.updateBtn.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20.0).isActive = true
-            self.updateBtn.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20.0).isActive = true
-            self.updateBtn.heightAnchor.constraint(equalToConstant: 50.0).isActive = true
-            self.updateBtn.topAnchor.constraint(equalTo: self.lineView.bottomAnchor, constant: 20.0).isActive = true
-            self.updateBtn.addTarget(self, action: #selector(self.updateData(_:)), for: .touchUpInside)
-            
             self.view.addSubview(self.tableView)
             self.tableView.translatesAutoresizingMaskIntoConstraints = false
             self.tableView.isUserInteractionEnabled = true
-            self.tableView.topAnchor.constraint(equalTo: self.updateBtn.bottomAnchor, constant: 10.0).isActive = true
+            self.tableView.topAnchor.constraint(equalTo: self.lineView.bottomAnchor, constant: 0.0).isActive = true
             self.tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0.0).isActive = true
             self.tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0.0).isActive = true
             self.tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0.0).isActive = true

@@ -7,7 +7,25 @@
 		<key>Healthify.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>24</integer>
+			<integer>26</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>20711A4324C860FC008E0A44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20711A5C24C860FF008E0A44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20711A6724C860FF008E0A44</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

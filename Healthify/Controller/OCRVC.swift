@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 class OCRVC: UIViewController {
     
@@ -34,16 +33,11 @@ class OCRVC: UIViewController {
     
     let documentsLabel: UILabel = {
         let label = UILabel()
-        label.text = "My Documents"
-        label.font = UIFont(name: "Avenir-Heavy", size: 24.0)
+        label.text = "Press '+' button to scan documents and make a pdf of the text."
+        label.numberOfLines = 3
+        label.font = UIFont(name: "Avenir-Medium", size: 24.0)
         label.textColor = .black
         return label
-    }()
-    
-    let spinner: UIActivityIndicatorView = {
-        let spinner = UIActivityIndicatorView()
-        spinner.color = .black
-        return spinner
     }()
     
     let tableView: UITableView = {
@@ -55,18 +49,15 @@ class OCRVC: UIViewController {
     }()
     
     @objc func addDocument(_ sender: UIButton) {
+  
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "CameraVC") as? CameraVC
         self.present(nextViewController!, animated:true, completion:nil)
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.addSubview(spinner)
-        spinner.translatesAutoresizingMaskIntoConstraints = false
-        spinner.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
-        spinner.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
         
         self.view.addSubview(self.lineView)
         self.lineView.translatesAutoresizingMaskIntoConstraints = false
@@ -90,9 +81,12 @@ class OCRVC: UIViewController {
         
         self.view.addSubview(self.documentsLabel)
         self.documentsLabel.translatesAutoresizingMaskIntoConstraints = false
-        self.documentsLabel.topAnchor.constraint(equalTo: self.lineView.bottomAnchor, constant: 10.0).isActive = true
+        self.documentsLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0.0).isActive = true
+        self.documentsLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: 0.0).isActive = true
         self.documentsLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20.0).isActive = true
-    }
+        self.documentsLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20.0).isActive = true
         
+    }
+
     
 }
