@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SkyFloatingLabelTextField
 import CoreLocation
+import FirebaseDatabase
 
 class SignUpVC: UIViewController, CLLocationManagerDelegate {
     
@@ -235,6 +236,13 @@ class SignUpVC: UIViewController, CLLocationManagerDelegate {
                     print("Error setting data of createUser, \(error.localizedDescription)")
                 } else {
                     let currentUser = Auth.auth().currentUser
+                    
+                    let reference  = Database.database().reference().child("users").child(currentUser!.uid)
+                    let values = ["email" : email, "name" : name] as [String : Any]
+                    reference.updateChildValues(values) { (error, ref) in
+                        print("Updated data in firebase realtime database")
+                    }
+                    
                     currentUser?.sendEmailVerification(completion: { (error) in
                         if let error = error {
                             print("Error while sending email verification, \(error.localizedDescription)")

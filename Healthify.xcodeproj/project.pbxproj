@@ -13,6 +13,7 @@
 		20262FF6250D399600E64FE9 /* AdsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20262FF5250D399600E64FE9 /* AdsVC.swift */; };
 		20303AC22505108200796028 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20303AC12505108200796028 /* ChatVC.swift */; };
 		20303AC42505109D00796028 /* BuySellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20303AC32505109D00796028 /* BuySellVC.swift */; };
+		2042B9122514EC4200B1D690 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042B9112514EC4200B1D690 /* User.swift */; };
 		204F0C92250AA1C8005B3DC5 /* ImagesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204F0C91250AA1C8005B3DC5 /* ImagesVC.swift */; };
 		206C0036250D14C6002D62BC /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206C0035250D14C6002D62BC /* ProfileVC.swift */; };
 		20711A4824C860FC008E0A44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20711A4724C860FC008E0A44 /* AppDelegate.swift */; };
@@ -27,8 +28,12 @@
 		20B932E525090F1800C24572 /* ItemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B932E325090F1800C24572 /* ItemsCell.swift */; };
 		20B932E625090F1800C24572 /* ItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B932E425090F1800C24572 /* ItemsCell.xib */; };
 		20BB2D9C2505587C009CCC8B /* AddItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BB2D9B2505587C009CCC8B /* AddItemVC.swift */; };
+		20CF0F94251201C2008759FF /* ParticularChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF0F93251201C2008759FF /* ParticularChatVC.swift */; };
+		20CF0F962512395D008759FF /* AllChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF0F952512395D008759FF /* AllChatsVC.swift */; };
+		20CF0F9D25124266008759FF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CF0F9C25124266008759FF /* Message.swift */; };
 		20CFA2F424CD62910002D0D5 /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA2F324CD62910002D0D5 /* MyProfileVC.swift */; };
 		20CFA2F624CD68F60002D0D5 /* UpdateDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CFA2F524CD68F60002D0D5 /* UpdateDataVC.swift */; };
+		20D3732C2515264600547800 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D3732B2515264600547800 /* ChatMessageCell.swift */; };
 		20DE032124CEB63E00DAC657 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 20DE032024CEB63E00DAC657 /* GoogleService-Info.plist */; };
 		20DE032324CEC29400DAC657 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DE032224CEC29400DAC657 /* CameraVC.swift */; };
 		20E533C624CCA11D00E2DDA4 /* ParticularDonorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E533C524CCA11D00E2DDA4 /* ParticularDonorVC.swift */; };
@@ -43,6 +48,7 @@
 		20EC419124CC66BC0090183C /* StartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC419024CC66BC0090183C /* StartVC.swift */; };
 		20EC419424CC69600090183C /* DonorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EC419224CC69600090183C /* DonorCell.swift */; };
 		20EC419524CC69600090183C /* DonorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20EC419324CC69600090183C /* DonorCell.xib */; };
+		20F0F1EB25174E0700B8CD78 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F0F1EA25174E0700B8CD78 /* UserCell.swift */; };
 		C301C6F7BE0DA885D27BC760 /* Pods_Healthify_HealthifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EE72A68EBAACF42649C8AF /* Pods_Healthify_HealthifyUITests.framework */; };
 		E09B584DED2BEE02004C761F /* Pods_HealthifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B7F612F187003E6E51EC39 /* Pods_HealthifyTests.framework */; };
 /* End PBXBuildFile section */
@@ -72,6 +78,7 @@
 		20262FF5250D399600E64FE9 /* AdsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsVC.swift; sourceTree = "<group>"; };
 		20303AC12505108200796028 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		20303AC32505109D00796028 /* BuySellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySellVC.swift; sourceTree = "<group>"; };
+		2042B9112514EC4200B1D690 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		204F0C91250AA1C8005B3DC5 /* ImagesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesVC.swift; sourceTree = "<group>"; };
 		206C0035250D14C6002D62BC /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		20711A4424C860FC008E0A44 /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,8 +99,12 @@
 		20B932E325090F1800C24572 /* ItemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCell.swift; sourceTree = "<group>"; };
 		20B932E425090F1800C24572 /* ItemsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsCell.xib; sourceTree = "<group>"; };
 		20BB2D9B2505587C009CCC8B /* AddItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemVC.swift; sourceTree = "<group>"; };
+		20CF0F93251201C2008759FF /* ParticularChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticularChatVC.swift; sourceTree = "<group>"; };
+		20CF0F952512395D008759FF /* AllChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChatsVC.swift; sourceTree = "<group>"; };
+		20CF0F9C25124266008759FF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		20CFA2F324CD62910002D0D5 /* MyProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 		20CFA2F524CD68F60002D0D5 /* UpdateDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDataVC.swift; sourceTree = "<group>"; };
+		20D3732B2515264600547800 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		20DE032024CEB63E00DAC657 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		20DE032224CEC29400DAC657 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		20E533C524CCA11D00E2DDA4 /* ParticularDonorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticularDonorVC.swift; sourceTree = "<group>"; };
@@ -108,6 +119,7 @@
 		20EC419024CC66BC0090183C /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
 		20EC419224CC69600090183C /* DonorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorCell.swift; sourceTree = "<group>"; };
 		20EC419324CC69600090183C /* DonorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonorCell.xib; sourceTree = "<group>"; };
+		20F0F1EA25174E0700B8CD78 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		25B7F612F187003E6E51EC39 /* Pods_HealthifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5A7C93C1971CD54080E074 /* Pods-Healthify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthify.release.xcconfig"; path = "Target Support Files/Pods-Healthify/Pods-Healthify.release.xcconfig"; sourceTree = "<group>"; };
 		7EB512B5E544236183FD97EC /* Pods-Healthify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Healthify.debug.xcconfig"; path = "Target Support Files/Pods-Healthify/Pods-Healthify.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,11 +173,13 @@
 				20303AC32505109D00796028 /* BuySellVC.swift */,
 				204F0C91250AA1C8005B3DC5 /* ImagesVC.swift */,
 				20BB2D9B2505587C009CCC8B /* AddItemVC.swift */,
-				20303AC12505108200796028 /* ChatVC.swift */,
 				206C0035250D14C6002D62BC /* ProfileVC.swift */,
 				20CFA2F324CD62910002D0D5 /* MyProfileVC.swift */,
 				20CFA2F524CD68F60002D0D5 /* UpdateDataVC.swift */,
 				20262FF5250D399600E64FE9 /* AdsVC.swift */,
+				20303AC12505108200796028 /* ChatVC.swift */,
+				20CF0F93251201C2008759FF /* ParticularChatVC.swift */,
+				20CF0F952512395D008759FF /* AllChatsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +195,8 @@
 				20B932E425090F1800C24572 /* ItemsCell.xib */,
 				20262FEE250D31B700E64FE9 /* ProfileCell.swift */,
 				20262FEF250D31B700E64FE9 /* ProfileCell.xib */,
+				20F0F1EA25174E0700B8CD78 /* UserCell.swift */,
+				20D3732B2515264600547800 /* ChatMessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +226,7 @@
 		20711A4624C860FC008E0A44 /* Healthify */ = {
 			isa = PBXGroup;
 			children = (
+				20CF0F9725123F35008759FF /* Model */,
 				2033D5A924C86BCC00C31CE2 /* View */,
 				2033D5A824C86BCA00C31CE2 /* Controller */,
 				20711A4724C860FC008E0A44 /* AppDelegate.swift */,
@@ -240,6 +257,15 @@
 				20711A6E24C860FF008E0A44 /* Info.plist */,
 			);
 			path = HealthifyUITests;
+			sourceTree = "<group>";
+		};
+		20CF0F9725123F35008759FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20CF0F9C25124266008759FF /* Message.swift */,
+				2042B9112514EC4200B1D690 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A02EA859F77BF750BA83E18B /* Pods */ = {
@@ -513,13 +539,18 @@
 				206C0036250D14C6002D62BC /* ProfileVC.swift in Sources */,
 				20303AC22505108200796028 /* ChatVC.swift in Sources */,
 				20EC418724CC24D40090183C /* ForgotPassVC.swift in Sources */,
+				20CF0F9D25124266008759FF /* Message.swift in Sources */,
 				20711A5224C860FC008E0A44 /* Healthify.xcdatamodeld in Sources */,
+				20CF0F94251201C2008759FF /* ParticularChatVC.swift in Sources */,
 				20CFA2F624CD68F60002D0D5 /* UpdateDataVC.swift in Sources */,
+				20D3732C2515264600547800 /* ChatMessageCell.swift in Sources */,
+				2042B9122514EC4200B1D690 /* User.swift in Sources */,
 				20EA0C7E25015528009AEB85 /* PDFCreator.swift in Sources */,
 				20E533CB24CCA31800E2DDA4 /* ParticularDonorCell.swift in Sources */,
 				20711A4C24C860FC008E0A44 /* ViewController.swift in Sources */,
 				20DE032324CEC29400DAC657 /* CameraVC.swift in Sources */,
 				20EC418B24CC65230090183C /* OCRVC.swift in Sources */,
+				20CF0F962512395D008759FF /* AllChatsVC.swift in Sources */,
 				20711A4824C860FC008E0A44 /* AppDelegate.swift in Sources */,
 				20EC418524CC11C00090183C /* SignUpVC.swift in Sources */,
 				20EC419424CC69600090183C /* DonorCell.swift in Sources */,
@@ -532,6 +563,7 @@
 				20CFA2F424CD62910002D0D5 /* MyProfileVC.swift in Sources */,
 				20EC418924CC64E80090183C /* DonorsVC.swift in Sources */,
 				20262FF0250D31B700E64FE9 /* ProfileCell.swift in Sources */,
+				20F0F1EB25174E0700B8CD78 /* UserCell.swift in Sources */,
 				20303AC42505109D00796028 /* BuySellVC.swift in Sources */,
 				20E533C624CCA11D00E2DDA4 /* ParticularDonorVC.swift in Sources */,
 			);
